@@ -1,16 +1,32 @@
-# Compiled class file
+# --- Java 컴파일 결과물 ---
 *.class
 
-# Log file
+# --- 로그 파일 ---
 *.log
 
-# BlueJ files
-*.ctxt
+# --- 빌드 디렉터리 (Gradle / Maven 공통) ---
+target/
+build/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# --- IDE 설정 (IntelliJ, Eclipse 등) ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
 
-# Package Files #
+# --- OS/툴 관련 캐시 ---
+.DS_Store
+Thumbs.db
+
+# --- 테스트 리포트, 캐시 등 ---
+test-output/
+.gradle/
+out/
+
+# --- 패키징 결과물 ---
 *.jar
 *.war
 *.nar
@@ -19,6 +35,6 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# --- 로컬 환경 설정 (예: DB 설정) ---
+*.env
+*.properties.local
