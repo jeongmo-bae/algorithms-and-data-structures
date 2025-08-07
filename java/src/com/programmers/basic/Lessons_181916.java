@@ -43,7 +43,10 @@ public class Lessons_181916 {
         } else {
             answer = entryList.get(3).getKey();
         }
+        System.out.println("=========================");
+        System.out.println(a + " , " + b + " , " + c + " , " + d);
         System.out.println(entryList);
+        System.out.println(answer);
         return answer;
     }
 }
