@@ -1,11 +1,15 @@
 package com.programmers.basic;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Lessons_181916 {
+    public static void main(String[] args) {
+        Lessons_181916 lesson = new Lessons_181916();
+        Random random = new Random();
+        for (int i = 0; i < 4; i++) {
+            lesson.solution(random.nextInt(6)+1,random.nextInt(6)+1,random.nextInt(6)+1,random.nextInt(6)+1);
+        }
+    }
     public int solution(int a, int b, int c, int d) {
         int answer = 0;
         int mapSize ;
