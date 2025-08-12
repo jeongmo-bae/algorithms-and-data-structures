@@ -28,7 +28,16 @@ public class Lessons_42626 {
                 break;
             }
         }
-        //섞은 음식의 스코빌 지수 = 가장 맵지 않은 음식의 스코빌 지수 + (두 번째로 맵지 않은 음식의 스코빌 지수 * 2)
+        boolean allUpperThanK = true;
+        for (Integer scov : arrayListScoville) {
+            if (scov < K){
+                allUpperThanK = false;
+                break;
+            }
+        }
+        if (!allUpperThanK){
+            answer = -1;
+        }
         return answer;
     }
 }

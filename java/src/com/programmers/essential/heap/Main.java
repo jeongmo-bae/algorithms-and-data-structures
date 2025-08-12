@@ -6,5 +6,6 @@ public class Main {
         int answer = sol.solution(new int[]{1, 2, 3, 9, 10, 12}, 7);
         System.out.println("==================");
         System.out.println(answer);
+        System.out.println("==================");
     }
 }
