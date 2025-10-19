@@ -1,9 +1,12 @@
 package com.programmers.essential.hash;
 
+import com.programmers.SolutionTemplate;
+
 import java.util.Arrays;
 
-public class Lesson_42577 {
-    public boolean solution(String[] phone_book) {
+public class Lesson_42577 implements SolutionTemplate<String[], Boolean> {
+    @Override
+    public Boolean solution(String[] phone_book) {
         boolean answer = true;
         Arrays.sort(phone_book);
         System.out.println("Arrays.toString(phone_book) = " + Arrays.toString(phone_book));
